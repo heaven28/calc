@@ -3,5 +3,6 @@
   hosts: all
   tasks:
     - name: Pull Calc devops image
-      command:
-       cmd: id
+      docker_image:
+        name: heaven28/calc-devops:latest
+        source: pull
